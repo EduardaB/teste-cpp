@@ -4,9 +4,9 @@ using namespace std;
 
 int main()
 {
-    int valC, at, pts, pts2, pts3;
+    int valC, at, pts, pts2, pts3, st;
     double tm;
-    string tp;
+    string tp, c;
 
     // Pt. 1: cabecalho
     cout << "SISTEMA DE PERFIL DE CLIENTE" << endl;
@@ -66,5 +66,22 @@ int main()
       pts3 = 10;
     }
     cout << "Score de forma de pagamento = " << pts3 << " pontos" << endl;
+
+    // Pt. 6: final
+    st = pts+pts2+pts3;
+
+    if(st<=25)
+    {
+      c = "BRONZE";
+    }
+    else if(st>25 && st<=75)
+    {
+      c = "PRATA";
+    }
+    else if(st>75)
+    {
+      c = "OURO";
+    }
+    cout << endl << "Classificação final = CLIENTE " << c << endl;
     return 0;
 }
