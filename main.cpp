@@ -4,6 +4,9 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    // Pt. 1: cabecalho
+    cout << "SISTEMA DE PERFIL DE CLIENTE" << endl;
+    cout << "--------------------------------" << endl;
+    cout << "INFORME OS DADOS DO ÚLTIMO ANO" << endl;
     return 0;
 }
