@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int valC, at, pts;
+    int valC, at, pts, pts2, pts3;
     double tm;
     string tp;
 
@@ -42,5 +42,29 @@ int main()
     pts = 60;
     }
     cout << endl << "Score de volume de compras = " << pts << " pontos" << endl;
+
+    // Pt. 5: Scores inadimplencia e pagamento
+    if(at>1 || tm==0)
+    {
+      pts2 = 0;
+    }
+    else if(tm!=0 && at==1)
+    {
+      pts2 = 15;
+    }
+    else if(tm!=0 && at==0)
+    {
+      pts2 = 30;
+    }
+    cout << endl << "Score de inadimplência = " << pts2 << " pontos" << endl;
+    if(tm!=0 && tp=="D")
+    {
+      pts3 = 5;
+    }
+    else if(tm!=0 && (tp=="C" || tp=="B"))
+    {
+      pts3 = 10;
+    }
+    cout << "Score de forma de pagamento = " << pts3 << " pontos" << endl;
     return 0;
 }
