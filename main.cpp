@@ -4,8 +4,9 @@ using namespace std;
 
 int main()
 {
-    int valC;
+    int valC, at;
     double tm;
+    string tp;
 
     // Pt. 1: cabecalho
     cout << "SISTEMA DE PERFIL DE CLIENTE" << endl;
@@ -17,5 +18,11 @@ int main()
     cin >> valC;
     cout << "Qual o ticket médio? ";
     cin >> tm;
+
+    //Pt. 3: leitura dos outros dados
+    cout << endl << "Quantas vezes o cliente atrasou o pagamento? ";
+    cin >> at;
+    cout << "A maioria das compras foi em dinheiro, cartão, ou boleto (D/C/B)? ";
+    cin >> tp;
     return 0;
 }
